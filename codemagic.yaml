@@ -1,0 +1,24 @@
+workflows:
+  android-app:
+    name: Quotes Trivia
+    environment:
+      vars:
+        SONAR_TOKEN: Encrypted(...) # enter the encrypted version of your SonarCloud token
+        SONAR_HOST_URL: Encrypted(...)
+       
+    scripts:
+      - |
+        # Generate debug build
+        ./gradlew assembleDebug        
+      - |
+        # Generate and upload code analysis report
+        ./gradlew sonarqube \
+          -Dsonar.projectKey=ChrisReferenceProjects_FlutterWhatsAppClone \
+          -Dsonar.host.url=https://chvd.eu.ngrok.io \
+          -Dsonar.login=4516e6638e29cb6d87a33a9302d2d33fd5dcd891     
+    artifacts:
+      - app/build/outputs/**/*.apk
+    publishing:
+      email:
+        recipients:
+          - name@example.com # enter your email
