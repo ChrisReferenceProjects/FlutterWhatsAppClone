@@ -4,10 +4,11 @@ import io.flutter.embedding.android.FlutterActivity
 
 class MainActivity: FlutterActivity() {
     fun doNothing() {
+        val b: Int = 10
         if (b == 0) {  // Noncompliant
-            doOneMoreThing()
+            //toto
         } else {
-            doOneMoreThing()
+            doNothing()
         }
     }
 }
