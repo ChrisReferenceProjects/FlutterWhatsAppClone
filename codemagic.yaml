@@ -3,8 +3,8 @@ workflows:
     name: Quotes Trivia
     environment:
       vars:
-        SONAR_TOKEN: Encrypted(...) # enter the encrypted version of your SonarCloud token
-        SONAR_HOST_URL: Encrypted(...)
+        SONAR_TOKEN: Encrypted(Z0FBQUFBQmhDVnJpRG5DekJNZGIwVmhFT2I4Qlk0TkZmVmJERE9mbVVUaDh4My1GNV9WTWlKd3ZzX3E5TUxZeWJYcEd6NEt3ell2RldaWEYycDZZZTVUOWJCTkxqNTk3NmZyamloV0d2Y2ZXZUszRmZlYTF3MERWcEdSZGRhRXFvVUFSUE4zTUN3bmU=) # enter the encrypted version of your SonarCloud token
+        SONAR_HOST_URL: https://chvd.eu.ngrok.io
        
     scripts:
       - |
