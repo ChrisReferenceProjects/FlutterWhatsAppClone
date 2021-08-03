@@ -21,4 +21,4 @@ workflows:
     publishing:
       email:
         recipients:
-          - name@example.com # enter your email
+          - christophe.havard@hotmail.fr # enter your email
