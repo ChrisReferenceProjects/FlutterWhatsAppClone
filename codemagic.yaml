@@ -10,9 +10,5 @@ workflows:
       - |
         # Generate and upload code analysis report
         ./android/gradlew sonarqube -Dsonar.projectKey=ChrisReferenceProjects_FlutterWhatsAppClone -Dsonar.host.url=$SONAR_HOST_URL -Dsonar.login=$SONAR_TOKEN   
-    artifacts:
-      - app/build/outputs/**/*.apk
-    publishing:
-      email:
-        recipients:
-          - christophe.havard@hotmail.fr # enter your email
+
+
